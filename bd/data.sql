@@ -44,11 +44,11 @@ INSERT INTO PRODUCTS ("product_id", "name", "category_id", "barcode", "selling_p
 
 -- CUSTOMERS
 INSERT INTO CUSTOMERS("id", "name", "last_name", "phone_number", "address", "email") VALUES
-    ('12345678', 'John', 'Doe', 1234567890, '123 Main St', 'john.doe@example.com'),
-    ('23456789', 'Jane', 'Smith', 2345678901, '456 Elm St', 'jane.smith@example.com'),
-    ('34567890', 'Michael', 'Johnson', 3456789012, '789 Oak St', 'michael.johnson@example.com'),
-    ('45678901', 'Emily', 'Williams', 4567890123, '321 Pine St', 'emily.williams@example.com'),
-    ('56789012', 'David', 'Brown', 5678901234, '654 Cedar St', 'david.brown@example.com');
+    ('12345678', 'John', 'Doe', '1234567890', '123 Main St', 'john.doe@example.com'),
+    ('23456789', 'Jane', 'Smith', '2345678901', '456 Elm St', 'jane.smith@example.com'),
+    ('34567890', 'Michael', 'Johnson', '3456789012', '789 Oak St', 'michael.johnson@example.com'),
+    ('45678901', 'Emily', 'Williams', '4567890123', '321 Pine St', 'emily.williams@example.com'),
+    ('56789012', 'David', 'Brown', '5678901234', '654 Cedar St', 'david.brown@example.com');
 
 -- PURCHASES
 

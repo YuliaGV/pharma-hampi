@@ -1,4 +1,4 @@
-package com.pharma.hampi.domain;
+package com.pharma.hampi.domain.dto;
 
 public class CategoryDTO {
 

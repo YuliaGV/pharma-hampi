@@ -1,6 +1,6 @@
 package com.pharma.hampi.domain.repository;
 
-import com.pharma.hampi.domain.ProductDTO;
+import com.pharma.hampi.domain.dto.ProductDTO;
 
 import java.util.List;
 import java.util.Optional;

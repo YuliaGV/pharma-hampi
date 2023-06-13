@@ -36,7 +36,7 @@ CREATE TABLE CUSTOMERS (
   "id" VARCHAR(20) NOT NULL,
   "name" VARCHAR(40) NULL,
   "last_name" VARCHAR(100) NULL,
-  "phone_number" NUMERIC NULL,
+  "phone_number" VARCHAR(50) NULL,
   "address" VARCHAR(80) NULL,
   "email" VARCHAR(70) NULL,
   PRIMARY KEY ("id")

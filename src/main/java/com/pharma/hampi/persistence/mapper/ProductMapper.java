@@ -1,7 +1,7 @@
 package com.pharma.hampi.persistence.mapper;
 
 
-import com.pharma.hampi.domain.ProductDTO;
+import com.pharma.hampi.domain.dto.ProductDTO;
 import com.pharma.hampi.persistence.entity.ProductEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;

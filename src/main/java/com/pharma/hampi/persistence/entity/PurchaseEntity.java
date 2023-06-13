@@ -8,6 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "purchases")
+
 public class PurchaseEntity {
 
     @Id
@@ -30,8 +31,8 @@ public class PurchaseEntity {
     @JoinColumn(name = "customer_id", insertable = false, updatable = false)
     private CustomerEntity customer;
 
-    @OneToMany(mappedBy = "purchase")
-    private List<PurchasesProductEntity> purchaseproducts;
+    @OneToMany(mappedBy = "purchase", cascade = {CascadeType.ALL})
+    private List<PurchaseItemEntity> products;
 
     //Getters and Setters
 
@@ -92,11 +93,11 @@ public class PurchaseEntity {
         this.customer = customer;
     }
 
-    public List<PurchasesProductEntity> getPurchaseproducts() {
-        return purchaseproducts;
+    public List<PurchaseItemEntity> getProducts() {
+        return products;
     }
 
-    public void setPurchaseproducts(List<PurchasesProductEntity> purchaseproducts) {
-        this.purchaseproducts = purchaseproducts;
+    public void setProducts(List<PurchaseItemEntity> products) {
+        this.products = products;
     }
 }

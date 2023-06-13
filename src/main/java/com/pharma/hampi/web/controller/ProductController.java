@@ -1,7 +1,7 @@
 package com.pharma.hampi.web.controller;
 
 
-import com.pharma.hampi.domain.ProductDTO;
+import com.pharma.hampi.domain.dto.ProductDTO;
 import com.pharma.hampi.domain.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")

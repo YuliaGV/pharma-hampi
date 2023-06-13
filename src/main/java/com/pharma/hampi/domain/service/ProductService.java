@@ -1,6 +1,6 @@
 package com.pharma.hampi.domain.service;
 
-import com.pharma.hampi.domain.ProductDTO;
+import com.pharma.hampi.domain.dto.ProductDTO;
 import com.pharma.hampi.domain.repository.ProductRepositoryInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,8 +12,6 @@ import java.util.Optional;
 public class ProductService {
     @Autowired
     private ProductRepositoryInterface productRepository;
-
-
     public List<ProductDTO> getAll() {
         return productRepository.getAll();
     }

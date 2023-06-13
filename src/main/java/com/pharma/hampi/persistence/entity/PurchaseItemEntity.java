@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "purchases_products")
-public class PurchasesProductEntity {
+public class PurchaseItemEntity {
 
     @EmbeddedId
     private PurchasesProductPK id;
@@ -17,6 +17,7 @@ public class PurchasesProductEntity {
     private Boolean status;
 
     @ManyToOne
+    @MapsId("purchaseID")
     @JoinColumn(name = "purchase_id", insertable = false, updatable = false)
     private PurchaseEntity purchase;
 

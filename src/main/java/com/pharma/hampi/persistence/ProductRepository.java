@@ -1,6 +1,6 @@
 package com.pharma.hampi.persistence;
 
-import com.pharma.hampi.domain.ProductDTO;
+import com.pharma.hampi.domain.dto.ProductDTO;
 import com.pharma.hampi.domain.repository.ProductRepositoryInterface;
 import com.pharma.hampi.persistence.crud.ProductCrudRepository;
 import com.pharma.hampi.persistence.entity.ProductEntity;

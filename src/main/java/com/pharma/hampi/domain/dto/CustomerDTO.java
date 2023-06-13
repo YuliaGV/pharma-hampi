@@ -1,42 +1,21 @@
-package com.pharma.hampi.persistence.entity;
+package com.pharma.hampi.domain.dto;
 
+public class CustomerDTO {
 
-import jakarta.persistence.*;
-
-import java.util.List;
-
-@Entity
-@Table(name ="customers")
-public class CustomerEntity {
-
-    @Id
-    private String id;
-
+    private String customerId;
     private String name;
-
-    @Column(name = "last_name")
     private String lastName;
-
-    @Column(name = "phone_number")
     private String phoneNumber;
-
     private String address;
     private String email;
 
 
-    @OneToMany(mappedBy = "customer")
-    private List<PurchaseEntity> purchases;
-
-
-    //Getters and Setters
-
-
-    public String getId() {
-        return id;
+    public String getCustomerId() {
+        return customerId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {
@@ -77,13 +56,5 @@ public class CustomerEntity {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public List<PurchaseEntity> getPurchases() {
-        return purchases;
-    }
-
-    public void setPurchases(List<PurchaseEntity> purchases) {
-        this.purchases = purchases;
     }
 }
